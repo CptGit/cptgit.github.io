@@ -119,8 +119,8 @@ smart_menu:
   aboutme: 'About me'
 
 friends:
-  Supreme Headquarters: https://rocketeer.tk/
-  My Youtube: https://www.youtube.com/channel/UCh6DvGxHiStTfZGqs1HVaOQ
+  # Supreme Headquarters: https://rocketeer.tk/
+  My YouTube: https://www.youtube.com/channel/UCh6DvGxHiStTfZGqs1HVaOQ
   My BiliBili: https://space.bilibili.com/155512273/#!/
   #友情链接4: http://localhost:4000/
   #友情链接5: http://localhost:4000/
