@@ -13,5 +13,5 @@
 - name: CONTACT
   link: /contact.html
 
-- name: STAFF
-  link: /staff.html
+# - name: STAFF
+#   link: /staff.html
