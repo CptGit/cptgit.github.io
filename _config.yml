@@ -1,0 +1,37 @@
+title: Zhiqiang Zang
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+
+# Override the theme used by github-pages with empty
+theme:
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - vendor
+  - .gitignore
+  - .gitattribute
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - TODO.md

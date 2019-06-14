@@ -1,0 +1,17 @@
+- name: HOME
+  link: /
+
+- name: BLOG
+  link: /blog.html
+
+- name: RESUME
+  link: /downloads/zhiqiang-zang-resume.pdf
+
+- name: MISC
+  link: /misc.html
+
+- name: CONTACT
+  link: /contact.html
+
+- name: STAFF
+  link: /staff.html
