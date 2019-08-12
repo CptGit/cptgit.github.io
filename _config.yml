@@ -8,7 +8,7 @@ plugins:
 sass:
   sass_dir: _sass
 
-# Override the theme used by github-pages with empty
+## Override the theme used by github-pages with empty
 theme:
 
 collections:
@@ -35,3 +35,27 @@ exclude:
   - Gemfile.lock
   - README.md
   - TODO.md
+
+## Defaults set by GitHub but we can change
+# github: [metadata]
+# encoding: UTF-8
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
+# future: true
+# jailed: false
+# theme: jekyll-theme-primer
+# gfm_quirks: paragraph_end
+
+## Configuration settings we cannot change, overrided by GitHub when
+## we push there
+# lsi: false
+# safe: true
+# source: [your repo's top level directory]
+# incremental: false
+# highlighter: rouge
+# gist:
+#   noscript: false
+# kramdown:
+#   math_engine: mathjax
+#   syntax_highlighter: rouge
