@@ -7,7 +7,7 @@ title: Contact
 <ul>
   {% for item in site.data.contact %}
     <li>
-      {{ item.type }}: {{ item.text }} {{ item.desc }}
+      {{ item.type }}: {% include utils/markdownify-with-removing-p-tag.html text=item.text %}
     </li>
   {% endfor %}
 </ul>
