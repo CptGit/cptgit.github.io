@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MIT 1806SC Linear Algebra Session 1.6 - 1.10
+author: zzq
 date: 2018-03-29
 tags:
     - Open Courses
@@ -8,7 +9,7 @@ tags:
     - Linear Algebra
     - MIT 18.06SC Linear Algebra
 toc: true
-
+math: true
 ---
 
 The following is my notes of Session 1.6 - 1.0.

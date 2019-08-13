@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MIT 18.06SC Linear Algebra Session 1.1 - 1.5
+author: zzq
 date: 2018-03-10
 tags:
     - Open Courses
@@ -8,6 +9,7 @@ tags:
     - Linear Algebra
     - MIT 18.06SC Linear Algebra
 toc: true
+math: true
 ---
 
 Hmmm... I'm learning [MIT 18.06SC Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm) at [MIT OpenCourseWare](https://ocw.mit.edu/index.htm).
