@@ -10,6 +10,7 @@ tags:
     - MIT 18.06SC Linear Algebra
 toc: true
 math: true
+lang: en
 ---
 
 The following is my notes of Session 1.6 - 1.0.

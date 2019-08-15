@@ -10,6 +10,7 @@ tags:
     - MIT 18.06SC Linear Algebra
 toc: true
 math: true
+lang: en
 ---
 
 Hmmm... I'm learning [MIT 18.06SC Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/index.htm) at [MIT OpenCourseWare](https://ocw.mit.edu/index.htm).

@@ -5,10 +5,17 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>
   {% if page.date %}
-    <!-- CN's date format -->
-    <!-- {% include utils/date-localizer.html date=page.date %} -->
-    <!-- EN's date format -->
-    {{ page.date | date_to_string }}
+    {% case page.lang %}
+      {% when 'zh-cn' %}
+        <!-- ZH-CN's date format -->
+        {% include utils/date-localizer.html date=page.date %}
+      {% when 'en' %}
+        <!-- EN's date format -->
+        {{ page.date | date_to_string }}
+      {% else %}
+        <!-- EN's date format as default-->
+        {{ page.date | date_to_string }}
+    {% endcase %}
   {% endif %}
   {% assign author = site.authors | where: 'short_name', page.author | first %}
   {% if author %}
