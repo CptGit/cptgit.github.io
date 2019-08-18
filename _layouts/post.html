@@ -19,8 +19,20 @@ layout: default
   {% endif %}
   {% assign author = site.authors | where: 'short_name', page.author | first %}
   {% if author %}
-    - <a href="{{ author.url | relative_url }}">{{ author.name }}</a>
+    -
+    <a href="{{ author.url | relative_url }}">
+    {% case page.lang %}
+      {% when 'zh-cn' %}
+        {{ author.name-zh }}
+      {% when 'en' %}
+        {{ author.name-en }}
+      {% else %}
+        {{ author.name-en }}
+    {% endcase %}
+    </a>
   {% endif %}
 </p>
-
+<hr />
 {{ content }}
+<hr />
+{% include license.html %}
