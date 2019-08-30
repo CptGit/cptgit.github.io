@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MIT 1806SC Linear Algebra Session 1.6 - 1.10
+title: MIT 18.06SC Linear Algebra Session 1.6 - 1.10
 author: zzq
 date: 2018-03-29
 tags:
