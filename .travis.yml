@@ -16,6 +16,15 @@ branches:
   # - gh-pages     # test the gh-pages branch
   # - /pages-(.*)/ # test every branch which starts with "pages-"
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  target_branch: master
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: src-dev
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
