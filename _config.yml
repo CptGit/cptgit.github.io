@@ -30,7 +30,6 @@ exclude:
   - vendor
   - .gitignore
   - .gitattribute
-  - CNAME
   - Gemfile
   - Gemfile.lock
   - README.md
