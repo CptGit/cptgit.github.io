@@ -1,6 +1,6 @@
 body {
   color: #000;
-  background-color: #f6f6f6;
+  background-color: $theme-light;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
   min-height: 100%;
   margin: 0;
@@ -8,10 +8,10 @@ body {
 }
 
 a:link, a:visited {
-  color: #9228bd;
+  color: $theme-dark;
 }
 
 a:hover, a:active {
   color: #ffffff;
-  background-color: #9228bd;
+  background-color: $theme-dark;
 }
