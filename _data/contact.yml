@@ -1,0 +1,3 @@
+- type: Email
+  text: >
+    `echo "${first_name}.${last_name}@utexas.edu"`

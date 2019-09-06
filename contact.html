@@ -1,0 +1,13 @@
+---
+layout: default
+title: Contact
+---
+<h1>Contact me</h1>
+
+<ul>
+  {% for item in site.data.contact %}
+    <li>
+      {{ item.type }}: {% include utils/markdownify-with-removing-p-tag.html text=item.text %}
+    </li>
+  {% endfor %}
+</ul>

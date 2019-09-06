@@ -1,0 +1,17 @@
+body {
+  color: #000;
+  background-color: #f6f6f6;
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding: 0 0 2em 0;
+}
+
+a:link, a:visited {
+  color: #9228bd;
+}
+
+a:hover, a:active {
+  color: #ffffff;
+  background-color: #9228bd;
+}
