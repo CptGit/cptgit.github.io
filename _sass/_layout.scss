@@ -15,6 +15,14 @@
 
 #menu {
   margin: 10px 0 0 0;
+
+  a:link, a:visited {
+    color: $theme-dark;
+  }
+  a:hover, a:active {
+    color: #ffffff;
+    background-color: $theme-dark;
+  }
   a.current{
     background: $theme-dark;
     color: #ffffff;

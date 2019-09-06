@@ -3,7 +3,13 @@
 
 /* colors definition */
 $theme-light: #f6f6f6;
-$theme-dark: #00bfff; // Yuri purple: #9528bd
+$theme-dark: #00bfff;
+
+/*
+ * Used RGB values
+ * Yuri purple: #9528bd
+ * deepskyblue: #00bfff
+ */
 
 @import "base";
 @import "layout";

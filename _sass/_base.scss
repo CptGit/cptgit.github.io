@@ -6,12 +6,3 @@ body {
   margin: 0;
   padding: 0 0 2em 0;
 }
-
-a:link, a:visited {
-  color: $theme-dark;
-}
-
-a:hover, a:active {
-  color: #ffffff;
-  background-color: $theme-dark;
-}
