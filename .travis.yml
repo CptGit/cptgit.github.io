@@ -22,6 +22,8 @@ deploy:
   target_branch: master
   github_token: $GITHUB_TOKEN
   keep_history: true
+  local_dir: _site
+  verbose: true
   on:
     branch: src-dev
 
