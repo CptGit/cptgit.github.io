@@ -1,6 +1,6 @@
 #banner {
   color: #ffffff;
-  background-color: #9228bd;
+  background-color: $theme-dark;
   border-bottom: 1px solid #000000;
   img {
     max-width: 1318px;
@@ -16,7 +16,7 @@
 #menu {
   margin: 10px 0 0 0;
   a.current{
-    background: #9228bd;
+    background: $theme-dark;
     color: #ffffff;
   }
 
@@ -80,6 +80,6 @@
   width: 100%;
   border-top: 1px solid #000000;
   text-align: right;
-  background-color: #9528bd;
+  background-color: $theme-dark;
   color: #ffffff;
 }
