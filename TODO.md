@@ -1,3 +1,6 @@
+- optimize: remove unneeded whitespace generated in HTML. See
+  https://shopify.github.io/liquid/basics/whitespace/
+
 - features: tags, comments, "more"
 
 - fix: better margin, padding layout
