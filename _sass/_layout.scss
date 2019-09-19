@@ -1,7 +1,7 @@
 #banner {
   color: #ffffff;
   background-color: $theme-dark;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $theme-dark;
   img {
     max-width: 1318px;
   }
@@ -14,7 +14,7 @@
 }
 
 #menu {
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
 
   a:link, a:visited {
     color: $theme-dark;
@@ -71,7 +71,7 @@
 }
 
 #content {
-
+  margin: 10px;
 }
 
 #clear {
@@ -84,10 +84,13 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 2.5em;
+  height: 2.6em; // hardcoded
   width: 100%;
-  border-top: 1px solid #000000;
-  text-align: right;
+  border-top: 1px solid $theme-dark;
   background-color: $theme-dark;
-  color: #ffffff;
+  #inner {
+    margin: .2em;
+    text-align: right;
+    color: #ffffff;
+  }
 }
