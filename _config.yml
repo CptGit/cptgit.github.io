@@ -8,8 +8,7 @@ plugins:
 sass:
   sass_dir: _sass
 
-## Override the theme used by github-pages with empty
-theme:
+# theme:
 
 collections:
   authors:
