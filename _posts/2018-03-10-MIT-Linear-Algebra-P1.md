@@ -17,13 +17,14 @@ Hmmm... I'm learning [MIT 18.06SC Linear Algebra](https://ocw.mit.edu/courses/ma
 
 OK, here we go!
 
-Unit I: $A\boldsymbol{x} = \boldsymbol{b}$ and the Four Subspaces
+Unit I: $$A\boldsymbol{x} = \boldsymbol{b}$$ and the Four Subspaces
 =============
 
 Session 1.1: The Geometry of Linear Equations
 ----------------
 
 We have a system of equations:
+
 $$
 \left\{
 \begin{aligned}
@@ -37,7 +38,7 @@ $$
 
 ### Row Picture
 
-Line $2x - y = 0$ and line $-x + 2y = 0$ intersects at the point $(1, 2)$, so $(1, 2)$ is the solution of the system of equations.
+Line $$2x - y = 0$$ and line $$-x + 2y = 0$$ intersects at the point $$(1, 2)$$, so $$(1, 2)$$ is the solution of the system of equations.
 
 > Maybe I should draw a X-Y coordinates here \>\_\>
 
@@ -49,9 +50,9 @@ $$
 x\begin{bmatrix}2 \\ -1\end{bmatrix} + y\begin{bmatrix}-1 \\ 2\end{bmatrix} = \begin{bmatrix}0 \\ 3\end{bmatrix}
 $$
 
-We see $x$ and $y$ as scalars of column vectors: $\boldsymbol{v_1} = \begin{bmatrix}2 \\ -1\end{bmatrix}$ and $\boldsymbol{v_2} = \begin{bmatrix}-1 \\ 2\end{bmatrix}$, and the sum $x\boldsymbol{v_1} + y\boldsymbol{v_2}$ is called a *linear combination* of $\boldsymbol{v_1}$ and $\boldsymbol{v_2}$.
+We see $$x$$ and $$y$$ as scalars of column vectors: $$\boldsymbol{v_1} = \begin{bmatrix}2 \\ -1\end{bmatrix}$$ and $$\boldsymbol{v_2} = \begin{bmatrix}-1 \\ 2\end{bmatrix}$$, and the sum $$x\boldsymbol{v_1} + y\boldsymbol{v_2}$$ is called a *linear combination* of $$\boldsymbol{v_1}$$ and $$\boldsymbol{v_2}$$.
 
-Geometrically, we can find one copy of $\boldsymbol{v_1}$ added to two copies of $\boldsymbol{v_2}$ just equals the vector $\begin{bmatrix}0 \\ 3\end{bmatrix}$. Then the solution should be $x = 1, y =2$.
+Geometrically, we can find one copy of $$\boldsymbol{v_1}$$ added to two copies of $$\boldsymbol{v_2}$$ just equals the vector $$\begin{bmatrix}0 \\ 3\end{bmatrix}$$. Then the solution should be $$x = 1, y =2$$.
 
 > I will add a figure when time is available \>\_\>
 
@@ -93,38 +94,38 @@ a combination of the columns of the matrix.
 
 ### Subspaces
 All combinations of column vectors creates a subspace.
-The subspaces of $\mathbb{R}^3$ are:
+The subspaces of $$\mathbb{R}^3$$ are:
 
 - the origin,
 - a line through the origin,
 - a plane through the origin,
-- all of $\mathbb{R}^3$.
+- all of $$\mathbb{R}^3$$.
 
 
 ### Conclusion
-- $A$ is invertible
+- $$A$$ is invertible
 
-    $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{b}$ has the unique solution $\boldsymbol{x}$ for each $\boldsymbol{b}$
+    $$\Leftrightarrow$$ $$A\boldsymbol{x} = \boldsymbol{b}$$ has the unique solution $$\boldsymbol{x}$$ for each $$\boldsymbol{b}$$
 
-    $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{0}$ has no non-zero solution $\boldsymbol{x}$
+    $$\Leftrightarrow$$ $$A\boldsymbol{x} = \boldsymbol{0}$$ has no non-zero solution $$\boldsymbol{x}$$
 
-    $\Leftrightarrow$ The columns of $A$ are *independent*
+    $$\Leftrightarrow$$ The columns of $$A$$ are *independent*
 
-    $\Leftrightarrow$ All vectors $A\boldsymbol{x}$ cover the whole vector space
+    $$\Leftrightarrow$$ All vectors $$A\boldsymbol{x}$$ cover the whole vector space
 
-    Example: $A = \begin{bmatrix}1 & 0 & 0 \\ -1 & 1 & 0 \\ 0 & -1 & 1\end{bmatrix}$
+    Example: $$A = \begin{bmatrix}1 & 0 & 0 \\ -1 & 1 & 0 \\ 0 & -1 & 1\end{bmatrix}$$
 
-- $A$ is not invertible
+- $$A$$ is not invertible
 
-    $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{b}$ has a solution $\boldsymbol{x}$ only for some of $\boldsymbol{b}$ in the vector space
+    $$\Leftrightarrow$$ $$A\boldsymbol{x} = \boldsymbol{b}$$ has a solution $$\boldsymbol{x}$$ only for some of $$\boldsymbol{b}$$ in the vector space
 
-    $\Leftrightarrow$ $A\boldsymbol{x} = \boldsymbol{0}$ has non-zero solutions $\boldsymbol{x}$
+    $$\Leftrightarrow$$ $$A\boldsymbol{x} = \boldsymbol{0}$$ has non-zero solutions $$\boldsymbol{x}$$
 
-    $\Leftrightarrow$ The columns of $A$ are *dependent*
+    $$\Leftrightarrow$$ The columns of $$A$$ are *dependent*
 
-    $\Leftrightarrow$ All vectors $A\boldsymbol{x}$ lies in only a subspace of the vector space
+    $$\Leftrightarrow$$ All vectors $$A\boldsymbol{x}$$ lies in only a subspace of the vector space
 
-    Example: $A = \begin{bmatrix}1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1\end{bmatrix}$
+    Example: $$A = \begin{bmatrix}1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1\end{bmatrix}$$
 
 ------------------
 
@@ -133,14 +134,14 @@ Session 1.3: Elimination with Matrices
 
 ### Method of Elimination
 
-We have an example $A\boldsymbol{x} = \boldsymbol{b}$,
+We have an example $$A\boldsymbol{x} = \boldsymbol{b}$$,
 
-$A = \begin{bmatrix}1 & 2 & 1 \\ 3 & 8 & 1 \\ 0 & 4 & 1\end{bmatrix}$ and $\boldsymbol{b} = \begin{bmatrix}2 \\ 12 \\2\end{bmatrix}$.
+$$A = \begin{bmatrix}1 & 2 & 1 \\ 3 & 8 & 1 \\ 0 & 4 & 1\end{bmatrix}$$ and $$\boldsymbol{b} = \begin{bmatrix}2 \\ 12 \\2\end{bmatrix}$$.
 
 Steps of Elimination:
 
-- Step 1: subtract $3$ times row 1 from row 2;
-- Step 2: subtract $2$ times row 2 from row 3.
+- Step 1: subtract $$3$$ times row $$1$$ from row $$2$$;
+- Step 2: subtract $$2$$ times row $$2$$ from row $$3$$.
 
 $$
 A = \begin{bmatrix}1 & 2 & 1 \\ 3 & 8 & 1 \\ 0 & 4 & 1\end{bmatrix}
@@ -153,14 +154,14 @@ $$
 \rightarrow \cdots \rightarrow \begin{bmatrix}2 \\ 6 \\ -10\end{bmatrix}
 $$
 
-Thus, we can easily solve the systems of equations, $\begin{bmatrix}x \\ y  \\ z\end{bmatrix} = \begin{bmatrix}2 \\ 1  \\ -2\end{bmatrix}$.
+Thus, we can easily solve the systems of equations, $$\begin{bmatrix}x \\ y  \\ z\end{bmatrix} = \begin{bmatrix}2 \\ 1  \\ -2\end{bmatrix}$$.
 
 ### Elimination Matrices
 
-The product of a matrix (3x3) and a column vector (3x1) is a column vector
-(3x1) that is a linear combination of the columns of the matrix.
+The product of a matrix ($$3 \times 3$$) and a column vector ($$3 \times 1$$) is a column vector
+($$3 \times 1$$) that is a linear combination of the columns of the matrix.
 
-The product of a row vector (1x3) and a matrix (3x3) is a row vector (1x3) that is a linear
+The product of a row vector ($$1 \times 3$$) and a matrix ($$3 \times 3$$) is a row vector ($$1 \times 3$$) that is a linear
 combination of the rows of the matrix.
 
 For example,
@@ -177,7 +178,7 @@ $$
 P = \begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1\end{bmatrix}.
 $$
 
-$P$ is a *permutation matrix* and the first and second rows of the matrix $PA$ are the second and first rows of the matrix $A$.
+$$P$$ is a *permutation matrix* and the first and second rows of the matrix $$PA$$ are the second and first rows of the matrix $$A$$.
 
 Note, matrix multiplication is *associative* but *not commutative*.
 
@@ -188,13 +189,13 @@ $$
 E_{21} = \begin{bmatrix}1 & 0 & 0 \\ -3 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix}
 $$
 
-which subtracts $3$ times row 1 from row 2. To "**undo**" this operation we must add $3$ times row 1 to row 2 using the inverse matrix:
+which subtracts $$3$$ times row $$1$$ from row $$2$$. To "**undo**" this operation we must add $$3$$ times row $$1$$ to row $$2$$ using the inverse matrix:
 
 $$
 E_{21}^{-1} = \begin{bmatrix}1 & 0 & 0 \\ 3 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix}.
 $$
 
-In fact, $E_{21}^{-1}E_{21} = I$.
+In fact, $$E_{21}^{-1}E_{21} = I$$.
 
 -------------------
 
@@ -203,15 +204,15 @@ Session 1.4: Multiplication and Inverse Matrices
 
 ### Four and a half ways we see matrix multiplication
 
-We have $AB = C$. $A$ is an $m \times n$ matrix and $B$ is an $n \times p$ matrix, then $C$ is an $m \times p$ matrix. We use $c_{ij}$ to denote the entry in row $i$ and column $j$ of matrix $C$ and the same denotation applies to $a_{ij}$ and $b_{ij}$.
+We have $$AB = C$$. $$A$$ is an $$m \times n$$ matrix and $$B$$ is an $$n \times p$$ matrix, then $$C$$ is an $$m \times p$$ matrix. We use $$c_{ij}$$ to denote the entry in row $$i$$ and column $$j$$ of matrix $$C$$ and the same denotation applies to $$a_{ij}$$ and $$b_{ij}$$.
 
 #### Row times column 
 
-$c_{ij} = \sum_{k=1}^n a_{ik}b_{kj}$
+$$c_{ij} = \sum_{k=1}^n a_{ik}b_{kj}$$
 
 #### Columns
 
-The product of matrix $A$ and column $j$ of matrix $B$ equals column $j$ of matrix $C$. This tells us that the columns of $C$ are combinations of columns of $A$.
+The product of matrix $$A$$ and column $$j$$ of matrix $$B$$ equals column $$j$$ of matrix $$C$$. This tells us that the columns of $$C$$ are combinations of columns of $$A$$.
 
 $$
 A
@@ -228,7 +229,7 @@ A(column 1) & A(column 2) & A(column 3) \\
 $$
 
 #### Rows
-The product of row $i$ of matrix $A$ and matrix $B$ equals row $i$ of matrix $C$. So the rows of $C$ are combinations of rows of $B$. 
+The product of row $$i$$ of matrix $$A$$ and matrix $$B$$ equals row $$i$$ of matrix $$C$$. So the rows of $$C$$ are combinations of rows of $$B$$. 
 
 $$
 \left[
@@ -256,7 +257,7 @@ AB = \sum_{k=1}{n}
 \begin{bmatrix}b_{k1} & \cdots & b_{kp}\end{bmatrix}
 $$
 
->note: Here I fixed a typo in the [lecture summary (PDf)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf) of this session: $b_{kp}$ instead of the original $b_{kn}$.
+>note: Here I fixed a typo in the [lecture summary (PDf)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf) of this session: $$b_{kp}$$ instead of the original $$b_{kn}$$.
 
 #### Blocks
 
@@ -271,11 +272,11 @@ $$
 
 ### Inverses
 
-If $A$ is *singular* or *not invertible*,
+If $$A$$ is *singular* or *not invertible*,
 
 then A does not have an inverse,
 
-and we can find some non-zero vector $\boldsymbol{x}$ for which $A\boldsymbol{x} = \boldsymbol{0}$
+and we can find some non-zero vector $$\boldsymbol{x}$$ for which $$A\boldsymbol{x} = \boldsymbol{0}$$
 
 #### Gauss-Jordan Elimination
 
@@ -292,11 +293,11 @@ I & E
 \end{array}
 \right]
 $$
-If $EA = I$, then $E = A^{-1}$.
+If $$EA = I$$, then $$E = A^{-1}$$.
 
 ----------------------
 
-Session 1.5: Factorization into $A = LU$
+Session 1.5: Factorization into $$A = LU$$
 ------------
 
 ### Inverse of a product
@@ -307,11 +308,11 @@ $$(AB)^{-1} = B^{-1}A^{-1}$$
 
 $$(AB)^{T} = B^{T}A^{T}, \quad (A^{T})^{-1} = (A^{-1})^{T}$$
 
-### $A = LU$
+### $$A = LU$$
 
-We can use elimination to convert $A$ into an upper triangular matrix $U$, that is $EA = U$, and further we can also convert this to a factorization $A = LU$ in which $L = E^{-1}$.
+We can use elimination to convert $$A$$ into an upper triangular matrix $$U$$, that is $$EA = U$$, and further we can also convert this to a factorization $$A = LU$$ in which $$L = E^{-1}$$.
 
-For example, in a three dimensional case, if $E_{32}E_{31}E_{21}A = U$ then $A=E_{21}^{-1}E_{31}^{-1}E_{32}^{-1}U = LU$. Suppose $E_{31}$ is the identity matrix and $E_{32}$ and $E_{21}$ are as shown below:
+For example, in a three dimensional case, if $$E_{32}E_{31}E_{21}A = U$$ then $$A=E_{21}^{-1}E_{31}^{-1}E_{32}^{-1}U = LU$$. Suppose $$E_{31}$$ is the identity matrix and $$E_{32}$$ and $$E_{21}$$ are as shown below:
 
 $$
 \begin{array}{cccc}
@@ -322,7 +323,7 @@ E_{32} & E_{21} & & E \\
 \end{array}.
 $$
 
-Here $L = E^{-1} = E_{21}^{-1}E_{32}^{-1}$:
+Here $$L = E^{-1} = E_{21}^{-1}E_{32}^{-1}$$:
 
 $$
 \begin{array}{cccc}
@@ -333,23 +334,23 @@ E_{21}^{-1} & E_{32}^{-1} & & L \\
 \end{array}
 $$
 
-Notice the 0 in row three column one of $L$, where $E$ had a $10$. The factorization $A = LU$ is preferable to the statement $EA = U$ because the combination of row subtractions does not have the effect on $L$ that it did on $E$.
+Notice the $$0$$ in row three column one of $$L$$, where $$E$$ had a $$10$$. The factorization $$A = LU$$ is preferable to the statement $$EA = U$$ because the combination of row subtractions does not have the effect on $$L$$ that it did on $$E$$.
 
-**If there are no row exchanges, the multipliers from the elimination matrices are copied directly into $L$.**
+**If there are no row exchanges, the multipliers from the elimination matrices are copied directly into $$L$$.**
 
 ### Cost of elimination
 
-If we define a typical operation is to multiply one row and then subtract it from another, then the total number of operations needed to factor $n \times n$ $A$ into $LU$ is on the order of $n^3$:
+If we define a typical operation is to multiply one row and then subtract it from another, then the total number of operations needed to factor $$n \times n$$ $$A$$ into $$LU$$ is on the order of $$n^3$$:
 
 $$1^2 + 2^2 + \cdots + (n - 1)^2 + n^2 = \sum_{i = 1}^{n}i^2 \approx \int_0^n x\,\mathrm{d}x = \frac{1}{3}n^3.$$
 
-While we’re factoring $A$ we’re also operating on $\boldsymbol{b}$. That costs about $n^2$ operations, which is hardly worth counting compared to $1/3n^3$. 
+While we’re factoring $$A$$ we’re also operating on $$\boldsymbol{b}$$. That costs about $$n^2$$ operations, which is hardly worth counting compared to $$1/3n^3$$. 
 
 ### Row exchanges
 
-The inverse of any permutation matrix $P$ is $P^{-1} = P^{T}$.
+The inverse of any permutation matrix $$P$$ is $$P^{-1} = P^{T}$$.
 
-There are $n!$ different ways to permute the rows of an $n \times n$ matrix (including the permutation that leaves all rows unfixed) so there are $n!$ permutation matrices. These matrices form a *multiplicative group*.
+There are $$n!$$ different ways to permute the rows of an $$n \times n$$ matrix (including the permutation that leaves all rows unfixed) so there are $$n!$$ permutation matrices. These matrices form a *multiplicative group*.
 
 -----------------
 
