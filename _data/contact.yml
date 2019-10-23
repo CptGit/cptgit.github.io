@@ -1,3 +1,6 @@
 - type: Email
   text: >
     \[my first name\]\[dot\]\[my last name\]\[at\]utexas\[dot\]edu
+
+- type: GitHub
+  text: <https://github.com/CptGit>
