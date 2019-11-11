@@ -18,3 +18,18 @@ title: Home
   I obtained my B.E. in Telecommunication Engineering at <a href="https://www.bupt.edu.cn">Beijing
   University of Posts and Telecommunications</a> in 2018</a>.
 </p>
+
+<h2 id="Resume">Resume</h2>
+<ul>
+  <li><a href="/dl/zhiqiang-zang-resume.pdf">English</a> (updated in October 2019)</li>
+  <!-- <li><a href="/dl/zhiqiang-zang-resume-zh.pdf">简体中文</a></li> -->
+</ul>
+
+<h2 id="Contact">Contact</h2>
+<ul>
+  {% for item in site.data.contact %}
+    <li>
+      {{ item.type }}: {% include utils/markdownify-with-removing-p-tag.html text=item.text %}
+    </li>
+  {% endfor %}
+</ul>
