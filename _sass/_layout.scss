@@ -1,3 +1,4 @@
+/* Banner. */
 #banner {
   color: #ffffff;
   background-color: $theme-dark;
@@ -13,8 +14,9 @@
   }
 }
 
+/* Menu. */
 #menu {
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 0; // top right bottom left
 
   a:link, a:visited {
     color: $theme-dark;
@@ -34,7 +36,8 @@
     margin: 0;
     padding: 0;
     li {
-      width: 120px;
+      min-width: 120px;
+      width: auto;
       font-size: 1.4em;
       display: block;
       float: left;
@@ -57,6 +60,7 @@
   }
 }
 
+/* Responsive setting for menu. */
 @media screen and (max-width: 600px) {
   #menu {
     ul li {
@@ -70,15 +74,18 @@
   }
 }
 
+/* Content. */
 #content {
-  margin: 10px;
+  margin: 10px 10%; // top&bottom left&right
 }
 
+/* Blank space between content footer. */
 #clear {
   clear: both;
   height: 1em;
 }
 
+/* Footer. */
 #footer {
   clear: both;
   position: fixed;

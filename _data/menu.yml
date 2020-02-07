@@ -4,8 +4,8 @@
 - name: Blog
   link: /blog.html
 
-- name: Misc
-  link: /misc.html
+- name: Publications
+  link: /#publications
 
 - name: Resume
   link: /dl/zhiqiang-zang-resume.pdf

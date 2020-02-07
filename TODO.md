@@ -1,3 +1,7 @@
+- fix: centerize menu.
+
+- optimize: split contents into different files from index page.
+
 - optimize: handle newline in Chinese text converted to a space when
   markdown is rendered to HTML. If this issue is resolved, then we can
   write multiple lines for a paragraph in Chinese.
