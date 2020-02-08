@@ -76,7 +76,10 @@
 
 /* Content. */
 #content {
-  margin: 10px 10%; // top&bottom left&right
+  margin: 10px auto; // top&bottom left&right
+  min-width: 25em;
+  max-width: 33em;
+  font-size: 18px;
 }
 
 /* Blank space between content footer. */
