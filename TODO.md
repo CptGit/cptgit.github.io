@@ -1,4 +1,8 @@
-- fix: centerize menu.
+- feature: encode email to svg graph
+
+- feature: use BibTeX to list publications (jekyll-scholar)
+
+- fix: centerize menu
 
 - optimize: split contents into different files from index page.
 
