@@ -1,3 +1,6 @@
+- devops: include gem versions in Gemfile and exclude Gemfile.lock
+  from git
+
 - feature: encode email to svg graph
 
 - feature: use BibTeX to list publications (jekyll-scholar)
