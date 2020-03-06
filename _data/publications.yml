@@ -1,0 +1,15 @@
+- key: bushe19vedebug
+  title: "VeDebug: Regression Debugging Tool for Java"
+  type: inproceedings
+  authors:
+    - Ben Buhse
+    - Thomas Wei
+    - Zhiqiang Zang
+    - Aleksandar Milicevic
+    - Milos Gligoric
+  booktitle: "International Conference on Software Engineering, Tool Demonstrations Track"
+  shortbooktitle: "ICSE Demo 2019"
+  pages: "15-18"
+  location: "Montreal, Canada"
+  year: "2019"
+  pdf: "BuhseETAL19VeDebug.pdf"
