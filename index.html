@@ -3,60 +3,8 @@ layout: default
 permalink: /
 title: Home
 ---
-<h2 id="about">About</h2>
-<p>Welcome back, Commander! My name is Zhiqiang Zang (臧志强).</p>
 
-<p>
-  I am a second year Ph.D. student at
-  <a href="https://www.utexas.edu/">The University of Texas at Austin</a>,
-  working with Prof. <a href="http://users.ece.utexas.edu/~gligoric/">Milos
-  Gligoric</a>. My current reserch interests are fuzzing testing, test
-  generation and regression testing. I have also explored other
-  software engineering and programming language topics, including
-  debugging, declarative languages and software mining.
-</p>
-
-<p>
-  I obtained my B.E. in Telecommunication Engineering at
-  <a href="https://www.bupt.edu.cn">Beijing University of Posts and
-  Telecommunications</a> in 2018</a>.
-</p>
-
-<!-- <h2 id="resume">Resume</h2>
-     <ul>
-     <li><a href="/dl/zhiqiang-zang-resume.pdf">English</a> (updated in October 2019)</li>
-     <li><a href="/dl/zhiqiang-zang-resume-zh.pdf">简体中文</a> (ATTENTION: NOT updated for long!)</li>
-     </ul> -->
-
+{%- include about.html -%}
 {%- include publications.html -%}
-
-<h2 id="fun-facts">Fun facts</h2>
-<p>
-  My favorite video game series is
-  <a href="https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert_(series)">
-    <i>Command & Conquer: Red Alert</i>
-  </a>. I have been playing with them since I was an eight-year-old
-  boy. I have hosted five tournaments for the game(s) since 2018. I
-  have visited two video game cities (Los Angeles and San Francisco)
-  in real world. I have also included in my life list a film adaption
-  and a next generation (RA4) of this game series.
-</p>
-<p>
-  PS, let me know if you are also a big fan! Subscribe/follow me on
-  <a href="https://www.youtube.com/channel/UCh6DvGxHiStTfZGqs1HVaOQ">
-    YouTube
-  </a>
-  /
-  <a href="https://space.bilibili.com/155512273">
-    Bilibili
-  </a>.
-</p>
-
-<h2 id="contact">Contact</h2>
-<ul>
-  {%- for item in site.data.contact -%}
-    <li>
-      {{ item.type }}: {%- include utils/markdownify-with-removing-p-tag.html text=item.text -%}
-    </li>
-  {%- endfor -%}
-</ul>
+{%- include fun-facts.html -%}
+{%- include contact.html -%}
