@@ -28,7 +28,7 @@ title: Home
      <li><a href="/dl/zhiqiang-zang-resume-zh.pdf">简体中文</a> (ATTENTION: NOT updated for long!)</li>
      </ul> -->
 
-{% include publications.html %}
+{%- include publications.html -%}
 
 <h2 id="fun-facts">Fun facts</h2>
 <p>
@@ -54,9 +54,9 @@ title: Home
 
 <h2 id="contact">Contact</h2>
 <ul>
-  {% for item in site.data.contact %}
+  {%- for item in site.data.contact -%}
     <li>
-      {{ item.type }}: {% include utils/markdownify-with-removing-p-tag.html text=item.text %}
+      {{ item.type }}: {%- include utils/markdownify-with-removing-p-tag.html text=item.text -%}
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>

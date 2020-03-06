@@ -11,9 +11,6 @@
   markdown is rendered to HTML. If this issue is resolved, then we can
   write multiple lines for a paragraph in Chinese.
 
-- optimize: remove unneeded whitespace generated in HTML. See
-  https://shopify.github.io/liquid/basics/whitespace/
-
 - features: tags, comments, "more".
 
 + infra: get rid of limited github-pages related stuff. After all we
@@ -31,3 +28,6 @@
   of the customization to its bibliography's format. I found it more
   comfortable to build the publication list from a yaml file with
   BibTeX-like format.
+
++ optimize: remove unneeded whitespace generated in HTML. See
+  https://shopify.github.io/liquid/basics/whitespace/

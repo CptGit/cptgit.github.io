@@ -1,38 +1,38 @@
 ---
 layout: default
 ---
-{% include math.html %}
+{%- include math.html -%}
 <h1>{{ page.title }}</h1>
 <p>
-  {% if page.date %}
-    {% case page.lang %}
-      {% when 'zh-cn' %}
+  {%- if page.date -%}
+    {%- case page.lang -%}
+      {%- when 'zh-cn' -%}
         <!-- ZH-CN's date format -->
-        {% include utils/date-localizer.html date=page.date %}
-      {% when 'en' %}
+        {%- include utils/date-localizer.html date=page.date -%}
+      {%- when 'en' -%}
         <!-- EN's date format -->
         {{ page.date | date_to_string }}
-      {% else %}
+      {%- else -%}
         <!-- EN's date format as default-->
         {{ page.date | date_to_string }}
-    {% endcase %}
-  {% endif %}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
+    {%- endcase -%}
+  {%- endif -%}
+  {%- assign author = site.authors | where: 'short_name', page.author | first -%}
+  {%- if author -%}
     -
     <a href="{{ author.url | relative_url }}">
-    {% case page.lang %}
-      {% when 'zh-cn' %}
+    {%- case page.lang -%}
+      {%- when 'zh-cn' -%}
         {{ author.name-zh }}
-      {% when 'en' %}
+      {%- when 'en' -%}
         {{ author.name-en }}
-      {% else %}
+      {%- else -%}
         {{ author.name-en }}
-    {% endcase %}
+    {%- endcase -%}
     </a>
-  {% endif %}
+  {%- endif -%}
 </p>
 <hr />
 {{ content }}
 <hr />
-{% include license.html %}
+{%- include license.html -%}
