@@ -3,8 +3,6 @@
 
 - feature: encode email to svg graph.
 
-- fix: centerize menu.
-
 - optimize: handle newline in Chinese text converted to a space when
   markdown is rendered to HTML. If this issue is resolved, then we can
   write multiple lines for a paragraph in Chinese.
@@ -31,3 +29,5 @@
   https://shopify.github.io/liquid/basics/whitespace/
 
 + optimize: split contents into different files from index page.
+
++ fix: centerize menu.

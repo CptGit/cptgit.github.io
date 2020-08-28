@@ -8,7 +8,7 @@
   }
   h1 {
     margin: 0;
-    padding: .2em;
+    padding: .6em .6em; // .2em;
     font-size: 2.2em;
     font-weight: normal;
   }
@@ -33,7 +33,9 @@
   ul {
     list-style-type: none; // remove bullets
     text-align: center;
-    margin: 0;
+    width: max-content;
+    // border: 3px solid green; // for debugging
+    margin: auto;
     padding: 0;
     li {
       min-width: 120px;
@@ -41,20 +43,21 @@
       font-size: 1.4em;
       display: block;
       float: left;
-      margin: 1px;
+      margin: 2px;
+      padding: 0;
       a {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 3px;
+        padding: .2em;
       }
     }
   }
-  :after{
+  ul:after{
     visibility: hidden;
     display: block;
     font-size: 0;
-    content: " ";
+    content: "";
     clear: both;
     height: 0;
   }
@@ -77,12 +80,12 @@
 /* Content. */
 #content {
   margin: 10px auto; // top&bottom left&right
-  min-width: 25em;
+  // min-width: 25em;
   max-width: 33em;
   font-size: 16px;
 }
 
-/* Blank space between content footer. */
+/* Blank space between content and footer. */
 #clear {
   clear: both;
   height: 1em;
@@ -94,12 +97,13 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 2.6em; // hardcoded
+  height: 3.6em; // hardcoded: bottom padding of body in _base.scss has
+                // to be set to no less than the height
   width: 100%;
   border-top: 1px solid $theme-dark;
   background-color: $theme-dark;
   #inner {
-    margin: .2em;
+    margin: .6em;
     text-align: right;
     color: #ffffff;
   }

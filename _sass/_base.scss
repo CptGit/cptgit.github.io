@@ -4,6 +4,6 @@ body {
   font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
   min-height: 100%;
   margin: 0;
-  padding: 0 0 2.6em 0; // hardcoded: bottom has to be set the same
-                        // value as height of footer div
+  padding: 0 0 3.6em 0; // hardcoded: bottom has to be set to no less
+                      // than the height of footer div
 }
