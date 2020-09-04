@@ -12,7 +12,7 @@ script: ./scripts/cibuild.sh
 # branch whitelist, only for GitHub Pages
 branches:
   only:
-    - src-dev
+    - src
   # - gh-pages     # test the gh-pages branch
   # - /pages-(.*)/ # test every branch which starts with "pages-"
 
@@ -25,7 +25,7 @@ deploy:
   local_dir: _site
   verbose: true
   on:
-    branch: src-dev
+    branch: src
 
 env:
   global:
