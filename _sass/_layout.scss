@@ -84,6 +84,35 @@
   padding: 0 .6em;
   max-width: 33em;
   font-size: 16px;
+
+  blockquote {
+    margin: 0;
+    margin-left: 1.5em;
+    border-left: 10px solid #bbb;
+    padding: 15px;
+    color: #696969;
+    background: #e9e9e9;
+  }
+
+  blockquote p {
+
+    border-radius: 5px;
+    font-style: italic;
+  }
+
+  blockquote footer {
+    font-style: normal;
+    text-align: right;
+  }
+
+  blockquote p::before {
+    content: '\201C';
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
 }
 
 /* Blank space between content and footer. */
