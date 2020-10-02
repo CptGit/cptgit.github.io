@@ -6,6 +6,7 @@
     <span class="title">{{ item.title }}</span>
     <span class="author">
       {%- for author in item.authors -%}
+        {%- assign author_name = author | split: ", " | last_first_name | reverse | join: " " -%}
         {%- unless forloop.first -%}
           {%- if forloop.last -%}
             {{ ' and ' }}
@@ -13,19 +14,19 @@
             {{ ', ' }}
           {%- endif -%}
         {%- endunless -%}
-        {%- if author == site.my_name -%}
-          <em>{{ author }}</em>
+        {%- if author_name == site.my_name -%}
+          <em>{{ author_name }}</em>
         {%- else -%}
           {%- assign is_coauthor = false -%}
           {%- for coauthor in site.data.coauthors -%}
-            {%- if author == coauthor.name -%}
-              <a href="{{ coauthor.link }}">{{ author }}</a>
+            {%- if author_name == coauthor.name -%}
+              <a href="{{ coauthor.link }}">{{ author_name }}</a>
               {%- assign is_coauthor = true -%}
               {%- break -%}
             {%- endif -%}
           {%- endfor -%}
           {%- if is_coauthor == false -%}
-            {{ author }}
+            {{ author_name }}
           {%- endif -%}
         {%- endif -%}
       {%- endfor -%}

@@ -1,12 +1,28 @@
+- key: nie20deuterium
+  title: "Unifying Execution of Imperative Generators and Declarative Specifications"
+  type: inproceedings
+  authors:
+    - Nie, Pengyu
+    - Parovic, Marinela
+    - Zang, Zhiqiang
+    - Khurshid, Sarfraz
+    - Milicevic, Aleksandar
+    - Gligoric, Milos
+  booktitle: "Conference on Object-Oriented Programming, Systems, Languages, and Applications"
+  shortbooktitle: "OOPSLA 2020"
+  pages: "to appear"
+  location: "Online"
+  year: "2020"
+
 - key: bushe19vedebug
   title: "VeDebug: Regression Debugging Tool for Java"
   type: inproceedings
   authors:
-    - Ben Buhse
-    - Thomas Wei
-    - Zhiqiang Zang
-    - Aleksandar Milicevic
-    - Milos Gligoric
+    - Buhse, Ben
+    - Wei, Thomas
+    - Zang, Zhiqiang
+    - Milicevic, Aleksandar
+    - Gligoric, Milos
   booktitle: "International Conference on Software Engineering, Tool Demonstrations Track"
   shortbooktitle: "ICSE Demo 2019"
   pages: "15-18"
