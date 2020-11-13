@@ -42,7 +42,9 @@
         {%- endif -%}
       {%- endif -%}
       {%- if item.pages -%}
-        pages {{ item.pages }}
+        pages
+        {% assign pages_arr = item.pages | split: "--" %}
+        {{ pages_arr | first }} &ndash; {{ pages_arr | last }}
         {%- if item.location or item.year -%}
           {{ ', ' }}
         {%- endif -%}

@@ -10,9 +10,10 @@
     - Gligoric, Milos
   booktitle: "Conference on Object-Oriented Programming, Systems, Languages, and Applications"
   shortbooktitle: "OOPSLA 2020"
-  pages: "to appear"
-  location: "Online"
+  pages: "217:1--217:26"
+  location: "<s>Chicago, US</s> (Everywhere)"
   year: "2020"
+  pdf: "NieETAL20Deuterium.pdf"
 
 - key: bushe19vedebug
   title: "VeDebug: Regression Debugging Tool for Java"
@@ -25,7 +26,7 @@
     - Gligoric, Milos
   booktitle: "International Conference on Software Engineering, Tool Demonstrations Track"
   shortbooktitle: "ICSE Demo 2019"
-  pages: "15-18"
+  pages: "15--18"
   location: "Montreal, Canada"
   year: "2019"
   pdf: "BuhseETAL19VeDebug.pdf"
