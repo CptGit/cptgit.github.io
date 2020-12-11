@@ -1,6 +1,3 @@
-- devops: include gem versions in Gemfile and exclude Gemfile.lock
-  from git.
-
 - feature: encode email to svg graph.
 
 - optimize: handle newline in Chinese text converted to a space when
@@ -31,3 +28,9 @@
 + optimize: split contents into different files from index page.
 
 + fix: centerize menu.
+
++ devops: include gem versions in Gemfile and exclude Gemfile.lock
+  from git.
+
+  I forgot why to include gem versions thus I did not. I just add
+  Gemfile.lock to gitignore file.

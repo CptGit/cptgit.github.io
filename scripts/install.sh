@@ -17,7 +17,7 @@ done
 ## Uncomment the following line if you are behind the GFW
 # gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 ## Install bundler
-gem install bundler -v 2.0.2
+gem install bundler
 
 ## Add bundle binary executable to PATH (onetime)
 BUNDLE_PATH=$( gem env | grep 'EXECUTABLE DIRECTORY' | sed 's/[^/]*\//\//' | sed 's/[ \t]*$//' )
@@ -26,7 +26,8 @@ export PATH="${BUNDLE_PATH}:${PATH}"
 ## Uncomment the following line if you are behind the GFW
 # bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 ## Install dependent gems for the project
-bundle install --path vendor/bundle
+bundle config set --local path "${ROOT_DIR}/vendor/bundle"
+bundle install
 
 ## Go back to the original directory
 popd > /dev/null
