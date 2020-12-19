@@ -5,6 +5,9 @@ _DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 ## Get the path of project root directory
 ROOT_DIR="${_DIR}/.."
 
+## Load library functions
+. ${_DIR}/lib.sh
+
 ## Changed the current directory to the project root directory
 pushd "${ROOT_DIR}" > /dev/null
 
@@ -20,8 +23,7 @@ done
 gem install bundler
 
 ## Add bundle binary executable to PATH (onetime)
-BUNDLE_PATH=$( gem env | grep 'EXECUTABLE DIRECTORY' | sed 's/[^/]*\//\//' | sed 's/[ \t]*$//' )
-export PATH="${BUNDLE_PATH}:${PATH}"
+add_gems_user_dir_to_path
 
 ## Uncomment the following line if you are behind the GFW
 # bundle config mirror.https://rubygems.org https://gems.ruby-china.com
