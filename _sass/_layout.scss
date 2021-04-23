@@ -83,7 +83,11 @@
   // min-width: 25em;
   padding: 0 .6em;
   max-width: 33em;
-  font-size: 16px;
+  font-size: $normalsize;
+
+  h2 {
+    font-size: $h2size;
+  }
 
   blockquote {
     margin: 0;
@@ -139,6 +143,7 @@
   width: 100%;
   border-top: 1px solid $theme-dark;
   background-color: $theme-dark;
+  font-size: $small;
   #inner {
     margin: .2em .6em;
     text-align: right;

@@ -2,6 +2,7 @@ body {
   color: #000;
   background-color: $theme-light;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: $normalsize;
   min-height: 100%;
   margin: 0;
   padding: 0 0 3.2em 0; // hardcoded: bottom has to be set to no less
