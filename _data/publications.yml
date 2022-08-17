@@ -1,3 +1,18 @@
+- key: zang22jattack
+  title: "Compiler Testing using Template Java Programs"
+  type: inproceedings
+  authors:
+    - Zang, Zhiqiang
+    - Wiatrek, Nathaniel
+    - Gligoric, Milos
+    - Shi, August
+  booktitle: "International Conference on Automated Software Engineering"
+  shortbooktitle: "ASE 2022"
+  pages: "[to appear]"
+  location: "Oakland Center, MI, USA"
+  year: "2022"
+  #pdf: ""
+
 - key: nie20deuterium
   title: "Unifying Execution of Imperative Generators and Declarative Specifications"
   type: inproceedings
@@ -11,7 +26,7 @@
   booktitle: "Conference on Object-Oriented Programming, Systems, Languages, and Applications"
   shortbooktitle: "OOPSLA 2020"
   pages: "217:1--217:26"
-  location: "<s>Chicago, US</s> (Everywhere)"
+  location: "<s>Chicago, IL, USA</s> (Everywhere)"
   year: "2020"
   pdf: "NieETAL20Deuterium.pdf"
 
