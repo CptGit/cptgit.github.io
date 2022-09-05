@@ -63,9 +63,6 @@
       {%- endif-%}
     </span>
     <span class="links">
-      {%- if item.html -%}
-        [<a href="{{ item.html }}">HTML</a>]
-      {%- endif -%}
       {%- if item.pdf -%}
         [<a href="{{ item.pdf | prepend: '/dl/papers/' | absolute_url }}">PDF</a>]
       {%- endif -%}
@@ -74,6 +71,9 @@
       {%- endif -%}
       {%- if item.tool -%}
         [<a href="{{ item.tool }}">Tool</a>]
+      {%- endif -%}
+      {%- if item.others -%}
+        {{ item.others | join: ", " }}
       {%- endif -%}
     </span>
     </li>

@@ -12,6 +12,9 @@
   location: "Oakland Center, MI, USA"
   year: "2022"
   #pdf: ""
+  others:
+    - <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14792">CVE-2020-14792</a>
+    - <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>
 
 - key: nie20deuterium
   title: "Unifying Execution of Imperative Generators and Declarative Specifications"
