@@ -1,5 +1,6 @@
 /* Publications list. */
 #publications {
+  font-size: $small;
   span {
     display: block;
   }
@@ -9,7 +10,7 @@
   }
   .title {
     font-style: italic;
-    font-size: $large;
+    font-size: $normalsize;
   }
   ul li {
     padding: 5px 0px;
