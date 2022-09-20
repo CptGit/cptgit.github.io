@@ -60,7 +60,7 @@
       {%- endif -%}
       {%- if item.shortbooktitle or item.pages or item.location or item.year -%}
       .
-      {%- endif-%}
+      {%- endif -%}
     </span>
     <span class="links">
       {%- if item.pdf -%}
@@ -73,7 +73,9 @@
         [<a href="{{ item.tool }}">Tool</a>]
       {%- endif -%}
       {%- if item.others -%}
-        {{ item.others | join: ", " }}
+        {%- for l in item.others -%}
+          [{{ l }}]
+        {%- endfor -%}
       {%- endif -%}
     </span>
     </li>

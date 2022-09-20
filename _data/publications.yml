@@ -11,7 +11,7 @@
   pages: "[to appear]"
   location: "Oakland Center, MI, USA"
   year: "2022"
-  #pdf: ""
+  pdf: "zang22jattack.pdf"
   others:
     - <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14792">CVE-2020-14792</a>
     - <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>
