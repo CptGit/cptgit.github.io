@@ -67,11 +67,13 @@
         [<a href="{{ item.pdf | prepend: '/dl/papers/' | absolute_url }}">PDF</a>]
       {%- endif -%}
       {%- if item.slides -%}
-        [<a href="{{ item.slides | prepend: '/dl/slides/' | absolute_url }}">Slides</a>]
+        [<a href="{{ item.slides }}">Slides</a>]
       {%- endif -%}
       {%- if item.tool -%}
         [<a href="{{ item.tool }}">Tool</a>]
       {%- endif -%}
+    </span>
+    <span class="others">
       {%- if item.others -%}
         {%- for l in item.others -%}
           [{{ l }}]
