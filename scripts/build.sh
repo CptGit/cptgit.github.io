@@ -16,7 +16,7 @@ add_gems_user_dir_to_path
 
 ## Build the site
 bundle exec jekyll build
-bundle exec htmlproofer "${ROOT_DIR}"/_site
+bundle exec htmlproofer --enforce-https=false --ignore-urls '/www.linkedin.com/' "${ROOT_DIR}"/_site
 
 ## Go back to the original directory
 popd > /dev/null
