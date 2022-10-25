@@ -85,6 +85,14 @@
   max-width: 33em;
   font-size: $normalsize;
 
+  img.avatar {
+    width: 128px;
+    height: 128px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left
+  }
+
   h2 {
     font-size: $h2size;
   }
