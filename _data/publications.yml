@@ -14,10 +14,11 @@
   pdf: "zang22jattack.pdf"
   tool: https://github.com/EngineeringSoftware/jattack
   slides: "https://docs.google.com/presentation/d/1s9qDkbxMbf_0UKN8Up4SET7Kkxhba75tXiny-jtGBTI/edit?usp=sharing"
-  others:
-    - <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14792">CVE-2020-14792</a>
-    - <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>
-  comment: "ACM SIGSOFT Distinguished Paper Award"
+  others: >
+    Discovered CVEs:
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14792">CVE-2020-14792</a>,
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>
+  award: "ACM SIGSOFT Distinguished Paper Award"
 
 - key: nie20deuterium
   title: "Unifying Execution of Imperative Generators and Declarative Specifications"

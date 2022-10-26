@@ -73,14 +73,8 @@
         [<a href="{{ item.tool }}">Tool</a>]
       {%- endif -%}
     </span>
-    <span class="others">
-      {%- if item.others -%}
-        {%- for l in item.others -%}
-          [{{ l }}]
-        {%- endfor -%}
-      {%- endif -%}
-    </span>
-    <span class="comment">{{ item.comment }}</span>
+    <span class="others">{{ item.others }}</span>
+    <span class="award">{{ item.award }}</span>
     </li>
   {%- endfor -%}
   </ul>
