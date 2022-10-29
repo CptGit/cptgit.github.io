@@ -26,6 +26,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope: # Exclude files from sitemap
+      path: "dl/zhiqiang-zang-resume.pdf"
+    values:
+      sitemap: false
 
 exclude:
   - scripts
