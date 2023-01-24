@@ -18,9 +18,10 @@ branches:
 
 deploy:
   provider: pages
-  skip_cleanup: true
+  os: linux
+  cleanup: false
   target_branch: master
-  github_token: $GITHUB_TOKEN
+  github_token: $TOKEN
   keep_history: true
   local_dir: _site
   verbose: true
@@ -35,8 +36,6 @@ addons:
   apt:
     packages:
     - libcurl4-openssl-dev
-
-sudo: false # route your build to the container-based infrastructure for a faster build
 
 cache: bundler # caching bundler gem packages will speed up build
 
