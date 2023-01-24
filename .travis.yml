@@ -18,10 +18,9 @@ branches:
 
 deploy:
   provider: pages
-  os: linux
   cleanup: false
   target_branch: master
-  github_token: $TOKEN
+  token: $GITHUB_TOKEN
   keep_history: true
   local_dir: _site
   verbose: true
