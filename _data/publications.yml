@@ -1,3 +1,32 @@
+- key: zang23jog
+  title: Pattern-based Peephole Optimizations with Java JIT Tests
+  type: inproceedings
+  authors:
+    - Zang, Zhiqiang
+    - Thimmaiah, Aditya
+    - Gligoric, Milos
+  booktitle: "International Symposium on Software Testing and Analysis"
+  shortbooktitle: "ISSTA 2023"
+  pages: "to appear"
+  location: "Seattle, WA, USA"
+  year: "2023"
+
+- key: zang23jattacktool
+  title: "JAttack: Java JIT Testing using Template Programs"
+  type: inproceedings
+  authors:
+    - Zang, Zhiqiang
+    - Yu, Fu-Yao
+    - Wiatrek, Nathaniel
+    - Gligoric, Milos
+    - Shi, August
+  booktitle: "International Conference on Software Engineering, Tool Demonstrations Track"
+  shortbooktitle: "ICSE Demo 2023"
+  pages: "to appear"
+  location: "Melbourne, Australia"
+  year: "2023"
+  tool: https://github.com/EngineeringSoftware/jattack
+
 - key: zang22jattack
   title: "Compiler Testing using Template Java Programs"
   type: inproceedings
