@@ -43,7 +43,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: ./script/cibuild.sh
+        run: ./scripts/cibuild.sh
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
