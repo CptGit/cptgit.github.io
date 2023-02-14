@@ -25,6 +25,7 @@
   pages: "to appear"
   location: "Melbourne, Australia"
   year: "2023"
+  pdf: "zang23jattacktool.pdf"
   tool: https://github.com/EngineeringSoftware/jattack
 
 - key: zang22jattack
