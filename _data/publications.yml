@@ -7,9 +7,12 @@
     - Gligoric, Milos
   booktitle: "International Symposium on Software Testing and Analysis"
   shortbooktitle: "ISSTA 2023"
-  pages: "to appear"
+  pages: "64--75"
   location: "Seattle, WA, USA"
   year: "2023"
+  pdf: "zang23jog.pdf"
+  tool: https://github.com/EngineeringSoftware/jog
+  slides: "https://docs.google.com/presentation/d/1FUOdAxU3bbehX_H8jW0xaysbS_Z_T1K7D3q98KznXYg/edit?usp=sharing"
 
 - key: zang23jattacktool
   title: "JAttack: Java JIT Testing using Template Programs"
