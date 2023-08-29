@@ -50,7 +50,9 @@
   others: >
     Discovered CVEs:
       <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14792">CVE-2020-14792</a>,
-      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>,
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22044">CVE-2023-22044</a>,
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22045">CVE-2023-22045</a>
   award: "ACM SIGSOFT Distinguished Paper Award"
 
 - key: nie20deuterium
