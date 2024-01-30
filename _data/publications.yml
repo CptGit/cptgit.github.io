@@ -1,3 +1,22 @@
+- key: zang24lejit
+  title: "Java JIT Testing with Template Extraction"
+  type: inproceedings
+  authors:
+    - Zang, Zhiqiang
+    - Yu, Fu-Yao
+    - Thimmaiah, Aditya
+    - Shi, August
+    - Gligoric, Milos
+  booktitle: "International Symposium on the Foundations of Software Engineering"
+  shortbooktitle: "FSE 2024"
+  pages: "to appear"
+  location: "Porto de Galinhas, Brazil, Brazil"
+  year: "2024"
+  others: >
+    Discovered CVEs:
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22044">CVE-2023-22044</a>,
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22045">CVE-2023-22045</a>
+
 - key: zang23jogtool
   title: "JOG: Java JIT Peephole Optimizations and Tests from Patterns"
   type: inproceedings
@@ -10,6 +29,7 @@
   pages: "to appear"
   location: "Lisbon, Portugal"
   year: "2024"
+  tool: https://github.com/EngineeringSoftware/jog
 
 - key: zang23jog
   title: "Pattern-Based Peephole Optimizations with Java JIT Tests"
@@ -63,9 +83,7 @@
   others: >
     Discovered CVEs:
       <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14792">CVE-2020-14792</a>,
-      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>,
-      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22044">CVE-2023-22044</a>,
-      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22045">CVE-2023-22045</a>
+      <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21305">CVE-2022-21305</a>
   award: "ACM SIGSOFT Distinguished Paper Award"
 
 - key: nie20deuterium
