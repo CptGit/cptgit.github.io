@@ -6,17 +6,17 @@ _DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 ROOT_DIR="${_DIR}/.."
 
 ## Load library functions
-. ${_DIR}/lib.sh
+# . ${_DIR}/lib.sh
 
 ## Changed the current directory to the project root directory
 pushd "${ROOT_DIR}" > /dev/null
 
 ## Add bundle binary executable to PATH (onetime)
-add_gems_user_dir_to_path
+# add_gems_user_dir_to_path
 
 ## Build the site
 bundle exec jekyll build
-bundle exec htmlproofer --enforce-https=false --ignore-urls '/www.linkedin.com/' "${ROOT_DIR}"/_site
+bundle exec htmlproofer --ignore-urls '/www.flaticon.com/,/www.linkedin.com/' "${ROOT_DIR}"/_site
 
 ## Go back to the original directory
 popd > /dev/null

@@ -1,3 +1,6 @@
+- devops: install.sh needs to rewritten to install ruby using RVM or
+  rbenv.
+
 - feature: encode email to svg graph.
 
 - optimize: handle newline in Chinese text converted to a space when

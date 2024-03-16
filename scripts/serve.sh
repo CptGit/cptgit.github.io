@@ -6,13 +6,13 @@ _DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 ROOT_DIR="${_DIR}/.."
 
 ## Load library functions
-. ${_DIR}/lib.sh
+# . ${_DIR}/lib.sh
 
 ## Changed the current directory to the project root directory
 pushd "${ROOT_DIR}" > /dev/null
 
 ## Add bundle binary executable to PATH (onetime)
-add_gems_user_dir_to_path
+# add_gems_user_dir_to_path
 
 ## Start a local server
 bundle exec jekyll serve
