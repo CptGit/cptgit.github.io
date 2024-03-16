@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'html-proofer', '4.4.3'
+gem 'html-proofer'
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
