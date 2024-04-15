@@ -29,6 +29,7 @@
   pages: "to appear"
   location: "Lisbon, Portugal"
   year: "2024"
+  pdf: "zang24jogtool.pdf"
   tool: https://github.com/EngineeringSoftware/jog
 
 - key: zang23jog
