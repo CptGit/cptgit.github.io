@@ -12,6 +12,7 @@
   pages: "to appear"
   location: "Porto de Galinhas, Brazil"
   year: "2024"
+  pdf: "zang24lejit.pdf"
   others: >
     Discovered CVEs:
       <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22044">CVE-2023-22044</a>,
