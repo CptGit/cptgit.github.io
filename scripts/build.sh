@@ -16,7 +16,7 @@ pushd "${ROOT_DIR}" > /dev/null
 
 ## Build the site
 bundle exec jekyll build
-bundle exec htmlproofer --ignore-urls '/www.flaticon.com/,/www.linkedin.com/' "${ROOT_DIR}"/_site
+bundle exec htmlproofer --ignore-urls '/www.flaticon.com/,/www.linkedin.com/,/www.freepik.com/' "${ROOT_DIR}"/_site
 
 ## Go back to the original directory
 popd > /dev/null
