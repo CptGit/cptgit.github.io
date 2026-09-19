@@ -1,3 +1,5 @@
+- layout: use special font rather than italic for Chinese.
+
 - devops: install.sh needs to rewritten to install ruby using RVM or
   rbenv.
 

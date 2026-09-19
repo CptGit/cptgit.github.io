@@ -17,20 +17,22 @@ layout: default
         {{ page.date | date_to_string }}
     {%- endcase -%}
   {%- endif -%}
-  {%- assign author = site.authors | where: 'short_name', page.author | first -%}
-  {%- if author -%}
-    -
-    <a href="{{ author.url | relative_url }}">
-    {%- case page.lang -%}
-      {%- when 'zh-cn' -%}
-        {{ author.name-zh }}
-      {%- when 'en' -%}
-        {{ author.name-en }}
-      {%- else -%}
-        {{ author.name-en }}
-    {%- endcase -%}
-    </a>
-  {%- endif -%}
+  {%- for single_author in page.author -%}
+    {%- assign author = site.authors | where: 'short_name', single_author | first -%}
+    {% if author %}
+      <a href="{{ author.url | relative_url }}">
+      {%- case page.lang -%}
+        {%- when 'zh-cn' -%}
+          {{ author.name-zh }}
+        {%- when 'en' -%}
+          {{ author.name-en }}
+        {%- else -%}
+          {{ author.name-en }}
+      {%- endcase -%}
+      </a>
+      {% unless forloop.last %}+{% endunless %}
+    {% endif %}
+  {%- endfor -%}
 </p>
 <hr />
 {{ content }}
