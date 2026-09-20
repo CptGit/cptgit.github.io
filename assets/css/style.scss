@@ -29,11 +29,11 @@ $font-zh: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Hiragino Sans GB
   src:
     local('Songti SC'), local('STSong'),
     local('Noto Serif SC'), local('Source Han Serif SC'),
-    local('SimSun'), local('宋体');
+    local('SimSun'), local('宋体'),
+    local('serif');
   // Tell the browser this font is "italic" to prevent it from
   // forcibly slanting the characters.
-  // font-style: italic; 
-  // font-weight: normal;
+  font-style: italic; 
   // Restrict the scope to Chinese character sets only (Chinese
   // characters and punctuation).
   unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+3000-303F, U+FF00-FFEF;
