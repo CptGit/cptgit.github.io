@@ -13,6 +13,32 @@ $large: 18px;
 $normalsize: 16px;
 $small: 14px;
 
+/* font families. */
+
+// Western font stack
+$font-en: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial;
+// Chinese font stack
+$font-zh: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+
+/** 
+ * Define a "pseudo-italic" font mapping for Chinese characters,
+ * pointing to the local alternative font.
+ */
+@font-face {
+  font-family: 'Chinese-Italic';
+  src:
+    local('Songti SC'), local('STSong'),
+    local('Noto Serif SC'), local('Source Han Serif SC'),
+    local('SimSun'), local('宋体');
+  // Tell the browser this font is "italic" to prevent it from
+  // forcibly slanting the characters.
+  // font-style: italic; 
+  // font-weight: normal;
+  // Restrict the scope to Chinese character sets only (Chinese
+  // characters and punctuation).
+  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+3000-303F, U+FF00-FFEF;
+}
+
 /*
  * Used RGB values
  * Yuri purple: #9528bd

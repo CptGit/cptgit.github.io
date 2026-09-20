@@ -120,6 +120,17 @@
   max-width: 33em;
   font-size: $normalsize;
 
+  // Apply the new font to <em> and <i> tags.
+  em, i {
+    // Insert our custom Chinese font after your existing
+    // Western fonts. This allows English text to use San Francisco
+    // (etc.) and slant normally, while Chinese text falls back to
+    // Chinese-Italic without slanting.
+    font-family: 'Chinese-Italic', $font-en, $font-zh, sans-serif;
+    font-style: italic; // Ensure English characters render in italic.
+    font-synthesis: weight;
+  }
+
   img.avatar {
     width: 128px;
     height: 128px;
@@ -147,6 +158,7 @@
 
   blockquote p {
     border-radius: 5px;
+    font-family: 'Chinese-Italic', $font-en, $font-zh, sans-serif;
     font-style: italic;
   }
 
