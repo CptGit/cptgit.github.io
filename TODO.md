@@ -1,5 +1,3 @@
-- layout: use special font rather than italic for Chinese.
-
 - devops: install.sh needs to rewritten to install ruby using RVM or
   rbenv.
 
@@ -39,3 +37,5 @@
 
   I forgot why to include gem versions thus I did not. I just add
   Gemfile.lock to gitignore file.
+
++ design: use special font rather than italic for Chinese.
