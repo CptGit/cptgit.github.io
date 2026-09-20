@@ -13,31 +13,22 @@ $large: 18px;
 $normalsize: 16px;
 $small: 14px;
 
-/* font families. */
+/* Font families. */
 
-// Western font stack
-$font-en: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial;
-// Chinese font stack
-$font-zh: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+/* Sans-Serif */
+$font-sans:
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+  "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+  sans-serif;
 
-/** 
- * Define a "pseudo-italic" font mapping for Chinese characters,
- * pointing to the local alternative font.
- */
-@font-face {
-  font-family: 'Chinese-Italic';
-  src:
-    local('Songti SC'), local('STSong'),
-    local('Noto Serif SC'), local('Source Han Serif SC'),
-    local('SimSun'), local('宋体'),
-    local('serif');
-  // Tell the browser this font is "italic" to prevent it from
-  // forcibly slanting the characters.
-  font-style: italic; 
-  // Restrict the scope to Chinese character sets only (Chinese
-  // characters and punctuation).
-  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+3000-303F, U+FF00-FFEF;
-}
+/* Serif */
+$font-serif:
+  "New York", "Georgia", "Times", "Cambria", "Times New Roman", "Liberation Serif", "Noto Serif",
+  "Songti SC", "STSong", "Songti TC", "Noto Serif SC", "Noto Serif CJK SC", "Noto Serif Simplified Chinese", "NotoSerifSC-Regular", "NotoSerifCJKsc-Regular", "Source Han Serif SC", "Source Han Serif CN", "Source Han Serif Simplified", "SourceHanSerifSC-Regular", "思源宋体", "思源宋體", "SimSun", "NSimSun", "宋体",
+  serif;
+
+/* Monospace */
+$font-mono: "SF Mono", "Menlo", "Monaco", "Consolas",  "Liberation Mono", "DejaVu Sans Mono", "Noto Sans Mono", monospace;
 
 /*
  * Used RGB values
