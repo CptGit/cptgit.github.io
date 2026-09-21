@@ -179,6 +179,10 @@
   .serif {
     font-family: $font-serif;
   }
+
+  poem {
+    white-space: pre-line;
+  }
 }
 
 /* Blank space between content and footer. */
