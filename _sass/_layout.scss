@@ -76,45 +76,6 @@
   }
 }
 
-/* Responsive setting for menu and banner. */
-@media screen and (max-width: 600px) {
-  #menu {
-    ul {
-      width: 100%;
-      li {
-        float: none;
-        width: auto;
-        font-size: 1.2em;
-        margin: 5px 0;
-    }
-    }
-    :after {
-      display: none
-    }
-  }
-  #banner {
-    text-align: center;
-    .github-corner:hover .octo-arm {
-      animation:none
-    }
-
-    .github-corner .octo-arm {
-      animation:octocat-wave 560ms ease-in-out
-    }
-  }
-  #content {
-    max-width: 100%;
-    padding: 0 1.2em;
-    font-size: 1.1rem;
-  }
-  #footer {
-    position: static;
-    #inner {
-      text-align: center;
-    }
-  }
-}
-
 /* Animation of github corner. */
 @keyframes octocat-wave {
   0%, 100% {
@@ -223,5 +184,40 @@
     margin: .2em .6em;
     text-align: right;
     color: #ffffff;
+  }
+}
+
+/* Responsive setting for menu and banner. */
+@media screen and (max-width: 600px) {
+  #menu {
+    ul {
+      width: 100%;
+      li {
+        float: none;
+        width: auto;
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+    }
+    :after {
+      display: none
+    }
+  }
+  #banner {
+    .github-corner:hover .octo-arm {
+      animation:none
+    }
+
+    .github-corner .octo-arm {
+      animation:octocat-wave 560ms ease-in-out
+    }
+  }
+  #content {
+    max-width: 100%;
+    padding: 0 1.2em;
+    font-size: 1.1rem;
+  }
+  #footer {
+    position: static;
   }
 }
