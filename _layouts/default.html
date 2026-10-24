@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.default_lang | default: 'en' }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1e90ff">
     <link rel="stylesheet" href={{ "/assets/css/style.css" | relative_url }}>
     <link rel="shortcut icon" type="image/png" href={{ "/assets/img/favicon.png" | relative_url }}>
-    <title>{{ site.title }} | {{ page.title }}</title>
     {%- feed_meta -%}
+    {%- comment -%}
+      jekyll-seo-tag already emits <title>, <link rel="canonical">, the
+      Open Graph/Twitter tags and a JSON-LD block, so no hand written
+      <title> is added here (it used to produce a duplicated one).
+    {%- endcomment -%}
     {%- seo -%}
   </head>
   <body>

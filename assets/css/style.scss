@@ -5,10 +5,13 @@
 
 /* colors.  */
 $theme-light: #f6f6f6;
-$theme-dark: #1e90ff; // #00bfff; 
+$theme-dark: #1e90ff; // #00bfff;
+$theme-deep: #0b6fd0;
 
 /* font sizes.*/
+$h1size: 1.9em;
 $h2size: 1.5em;
+$h3size: 1.2em;
 $large: 18px;
 $normalsize: 16px;
 $small: 14px;
@@ -33,10 +36,52 @@ $font-mono:
   ui-monospace, monospace;
 
 /*
+ * The palette is exposed as CSS custom properties so that every rule can
+ * refer to the same tokens and so that the whole theme can be swapped in
+ * one place, e.g. by the dark mode block below.
+ *
  * Used RGB values
  * Yuri purple: #9528bd
  * deepskyblue: #00bfff
  */
+:root {
+  --bg: #{$theme-light};          /* page background */
+  --fg: #1a1a1a;                  /* body text */
+  --muted: #5b6470;               /* secondary text (dates, venues, ...) */
+  --accent: #{$theme-dark};       /* links, menu, banner */
+  --accent-hover: #{$theme-deep}; /* darker shade for hover states */
+  --on-accent: #ffffff;           /* text on top of --accent */
+  --surface: #ffffff;             /* raised blocks: blockquotes, tables */
+  --border: #dde5ee;
+  --code-bg: #eaf1f9;
+  --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 6px 20px rgba(16, 24, 40, .07);
+  --banner-a: #{$theme-dark};
+  --banner-b: #{$theme-deep};
+  --banner-fg: #ffffff;
+  --footer-bg: #{$theme-deep};
+  --footer-fg: #eaf3ff;
+}
+
+/* Dark mode. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c;
+    --fg: #e6e8ec;
+    --muted: #98a2b3;
+    --accent: #58a6ff;
+    --accent-hover: #9cc9ff;
+    --on-accent: #0b1220;
+    --surface: #1c2129;
+    --border: #2b323c;
+    --code-bg: #1a1f27;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .45), 0 6px 20px rgba(0, 0, 0, .35);
+    --banner-a: #1d5289;
+    --banner-b: #102f4f;
+    --banner-fg: #e8f2ff;
+    --footer-bg: #102f4f;
+    --footer-fg: #c9dcf3;
+  }
+}
 
 @import "base";
 @import "layout";

@@ -1,22 +1,27 @@
 /* Banner. */
 #banner {
-  color: #ffffff;
-  background-color: $theme-dark;
-  border-bottom: 1px solid $theme-dark;
+  position: relative; // anchors the github corner
+  color: var(--banner-fg);
+  background-image: linear-gradient(135deg, var(--banner-a) 0%, var(--banner-b) 100%);
+  border-bottom: 1px solid var(--banner-b);
+  box-shadow: var(--shadow);
   img {
     max-width: 1318px;
   }
   h1 {
     margin: 0;
-    padding: .2em .4em; // .2em;
+    padding: .45em .55em;
     font-size: 2.2em;
     font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: .01em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .14);
   }
   .octocat {
     width: 60px;
     height: 60px;
-    fill:$theme-light;
-    color:$theme-dark;
+    fill: var(--bg);
+    color: var(--accent);
     position: absolute;
     top: 0;
     border: 0;
@@ -29,50 +34,50 @@
 
 /* Menu. */
 #menu {
-  margin: 5px 0 0 0; // top right bottom left
+  margin: 0;
+  padding: .3em .5em;
+  position: sticky; // stays reachable while reading a long post
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
 
-  a:link, a:visited {
-    color: $theme-dark;
-  }
-  a:hover, a:active {
-    color: #ffffff;
-    background-color: $theme-dark;
-  }
-  a.current{
-    background: $theme-dark;
-    color: #ffffff;
-  }
-
-  ul {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .4em .6em;
     list-style-type: none; // remove bullets
-    text-align: center;
-    width: max-content;
-    // border: 3px solid green; // for debugging
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     padding: 0;
-    li {
-      min-width: 120px;
-      width: auto;
-      font-size: 1.4em;
-      display: block;
-      float: left;
-      margin: 2px;
-      padding: 0;
-      a {
-        display: block;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: .2em;
-      }
-    }
   }
-  ul:after{
-    visibility: hidden;
+
+  li {
+    min-width: 6.5em;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  a {
     display: block;
-    font-size: 0;
-    content: "";
-    clear: both;
-    height: 0;
+    padding: .28em .5em;
+    color: var(--fg);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    border-radius: 6px;
+    transition: background-color .15s ease-in-out, color .15s ease-in-out;
+
+    &:hover, &:active, &:focus {
+      color: var(--on-accent);
+      background-color: var(--accent);
+    }
+    &.current {
+      background-color: var(--accent);
+      color: var(--on-accent);
+    }
   }
 }
 
@@ -91,40 +96,82 @@
 
 /* Content. */
 #content {
-  margin: 10px auto; // top&bottom left&right
+  margin: 1.6em auto 2.4em; // top&bottom left&right
   // min-width: 25em;
-  padding: 0 .6em;
-  max-width: 33em;
+  padding: 0 1.1em;
+  max-width: 34em;
   font-size: $normalsize;
+  line-height: 1.8;
 
-  img.avatar {
-    width: 128px;
-    height: 128px;
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left
-  }
-
-  img.post {
-    max-width: 100%;
-    margin: 5px;
+  h1 {
+    font-size: $h1size;
+    line-height: 1.3;
+    margin: 0 0 .3em;
   }
 
   h2 {
     font-size: $h2size;
+    line-height: 1.35;
+    margin: 1.6em 0 .6em;
+    padding-bottom: .15em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h3 {
+    font-size: $h3size;
+    margin: 1.4em 0 .4em;
+  }
+
+  p {
+    margin: 0 0 1.1em;
+  }
+
+  ul, ol {
+    margin: 0 0 1.1em;
+    padding-left: 1.4em;
+  }
+
+  li {
+    margin: .3em 0;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 1.8em 0;
+  }
+
+  img.avatar {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+    shape-outside: circle(50% at 50% 50%);
+    float: left;
+    margin: .4em 1.2em .6em .1em;
+    box-shadow: var(--shadow);
+  }
+
+  img.post {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.6em auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
   }
 
   blockquote {
-    margin: 0;
-    margin-left: 1.5em;
-    border-left: 10px solid #ccc;
-    padding: 15px;
-    color: #444444;
-    background: #f0f0f0;
+    margin: 1.4em 0;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: .9em 1.2em;
+    color: var(--muted);
+    background: var(--surface);
+    box-shadow: var(--shadow);
   }
 
   blockquote p {
-    border-radius: 5px;
     font-family: $font-serif;
   }
 
@@ -133,17 +180,9 @@
     text-align: right;
   }
 
-  // blockquote p::before {
-  //   content: '\201C';
-  //   color: #ccc;
-  //   font-size: 4em;
-  //   line-height: 0.1em;
-  //   margin-right: 0.25em;
-  //   vertical-align: -0.4em;
-  // }
   blockquote:before {
     content: '\201C';
-    color: #ccc;
+    color: var(--border);
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
@@ -152,6 +191,53 @@
 
   code {
     font-family: $font-mono;
+    font-size: .92em;
+  }
+
+  /* Inline code. */
+  :not(pre) > code {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .05em .32em;
+  }
+
+  /* Code blocks; Rouge wraps them in div.highlight > pre.highlight > code. */
+  div.highlight {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: .8em 1em;
+    margin: 1.4em 0;
+    overflow-x: auto;
+
+    pre.highlight {
+      margin: 0;
+      padding: 0;
+      background: none;
+
+      code {
+        line-height: 1.6;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    margin: 1.4em 0;
+    border-collapse: collapse;
+    font-size: $small;
+    line-height: 1.5;
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: .45em .7em;
+      text-align: left;
+    }
+
+    th {
+      background: var(--code-bg);
+    }
   }
 
   .serif {
@@ -159,7 +245,121 @@
   }
 
   poem {
+    display: block;
     white-space: pre-line;
+    font-family: $font-serif;
+    font-size: 1.08em;
+    line-height: 1.9;
+    margin: 1.4em 0;
+  }
+}
+
+/* Sections of the home page. */
+#about,
+#publications,
+#contact {
+  margin-bottom: 2.4em;
+
+  /* Their headings are the first elements, so they need no extra gap. */
+  h2 {
+    margin-top: 0;
+  }
+}
+
+#about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Post header. */
+#content .post-title {
+  font-size: $h1size;
+  line-height: 1.3;
+  margin: 0 0 .2em;
+}
+
+#content .post-meta {
+  color: var(--muted);
+  font-size: $small;
+
+  a {
+    color: var(--muted);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+/* Blog list. */
+#content .page-intro {
+  color: var(--muted);
+}
+
+#content .post-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  > li {
+    margin: 0 0 1.6em;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  > li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+#content .post-list-title {
+  font-size: 1.3em;
+  line-height: 1.35;
+  margin: 0 0 .1em;
+  padding-bottom: 0;
+  border-bottom: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#content .post-list-more {
+  margin-bottom: 0;
+  font-size: $small;
+}
+
+/* Table of contents of a post. */
+#content .toc {
+  margin: 0 0 1.6em;
+  padding: .55em .9em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: $small;
+  line-height: 1.6;
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  ol {
+    margin: .6em 0 .2em;
+    padding-left: 1.5em;
+  }
+
+  li {
+    margin: .2em 0;
+  }
+
+  .toc-h3 {
+    margin-left: 1.1em;
+    list-style-type: circle;
+    font-size: .95em;
   }
 }
 
@@ -178,33 +378,52 @@
   height: auto; // hardcoded: bottom padding of body in _base.scss has
                 // to be set to no less than the height
   width: 100%;
-  border-top: 1px solid $theme-dark;
-  background-color: $theme-dark;
+  background-color: var(--footer-bg);
+  color: var(--footer-fg);
   font-size: $small;
+  line-height: 1.5;
+  box-shadow: 0 -2px 12px rgba(16, 24, 40, .12);
+
   #inner {
-    margin: .2em .6em;
+    margin: .35em .8em;
     text-align: right;
-    color: #ffffff;
+
+    a {
+      color: var(--footer-fg);
+      text-decoration: underline;
+      text-underline-offset: .16em;
+
+      &:hover, &:active {
+        color: #ffffff;
+      }
+    }
   }
 }
 
-/* Responsive setting for menu and banner. */
+/* Responsive settings for menu, banner and footer. */
 @media screen and (max-width: 600px) {
+  /* The footer becomes static below, so it needs no reserved space. */
+  body {
+    padding-bottom: 0;
+  }
+
   #menu {
-    ul {
-      width: 100%;
-      li {
-        float: none;
-        width: auto;
-        font-size: 1.2em;
-        margin: 5px 0;
-    }
-    }
-    :after {
-      display: none
+    /* A multi line menu should not stick to the top of a small screen. */
+    position: static;
+    padding: .3em .4em;
+
+    li {
+      min-width: 5.5em;
+      font-size: 1.1em;
     }
   }
+
   #banner {
+    h1 {
+      font-size: 1.7em;
+      padding: .45em .6em;
+    }
+
     .github-corner:hover .octo-arm {
       animation:none
     }
@@ -213,11 +432,19 @@
       animation:octocat-wave 560ms ease-in-out
     }
   }
+
   #content {
     max-width: 100%;
     padding: 0 1.2em;
+    margin: 1.1em auto 1.6em;
     font-size: 1.1rem;
+    line-height: 1.75;
   }
+
+  #content img.post {
+    margin: 1.2em auto;
+  }
+
   #footer {
     position: static;
   }

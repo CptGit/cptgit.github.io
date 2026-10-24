@@ -33,7 +33,7 @@
     </span>
     <span class="booktitle">
       {{ item.booktitle }}
-    </sapn>
+    </span>
     <span class="misc">
       {%- if item.shortbooktitle -%}
         ({{ item.shortbooktitle }})
@@ -64,7 +64,7 @@
     </span>
     <span class="links">
       {%- if item.pdf -%}
-        [<a href="{{ item.pdf | prepend: '/dl/papers/' | absolute_url }}">PDF</a>]
+        [<a href="{{ item.pdf | prepend: '/dl/papers/' | relative_url }}">PDF</a>]
       {%- endif -%}
       {%- if item.slides -%}
         [<a href="{{ item.slides }}">Slides</a>]

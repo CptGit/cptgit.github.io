@@ -2,47 +2,40 @@
 layout: default
 ---
 {%- include math.html -%}
-<h1>{{ page.title }}</h1>
-<p>
-  {%- if page.date -%}
-    {%- case page.lang -%}
-      {%- when 'zh-cn' -%}
-        <!-- ZH-CN's date format -->
-        {%- include utils/date-localizer.html date=page.date -%}
-      {%- when 'en' -%}
-        <!-- EN's date format -->
-        {{ page.date | date_to_string }}
-      {%- else -%}
-        <!-- EN's date format as default-->
-        {{ page.date | date_to_string }}
-    {%- endcase -%}
-  {%- endif -%}
-  {%- if page.author -%}{{ " " }}{%- endif -%}
-  {%- for single_author in page.author -%}
-    {%- assign author = site.authors | where: 'short_name', single_author | first -%}
-    {%- if author -%}
-      <a href="{{ author.url | relative_url }}">
-      {%- case page.lang -%}
-        {%- when 'zh-cn' -%}
-          {{ author.name-zh }}
-        {%- when 'en' -%}
-          {{ author.name-en }}
-        {%- else -%}
-          {{ author.name-en }}
-      {%- endcase -%}
-      </a>
-      {%- case page.lang -%}
-        {%- when 'zh-cn' -%}
-          {% unless forloop.last %}，{% endunless %}
-        {%- when 'en' -%}
-          {% unless forloop.last %}, {% endunless %}
-        {%- else -%}
-          {% unless forloop.last %}, {% endunless %}
-      {%- endcase -%}
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-meta">
+    {%- if page.date -%}
+      {%- include utils/date.html date=page.date lang=page.lang -%}
     {%- endif -%}
-  {%- endfor -%}
-</p>
-<hr />
-{{ content }}
+    {%- if page.author -%}{{ " · " }}{%- endif -%}
+    {%- for single_author in page.author -%}
+      {%- assign author = site.authors | where: 'short_name', single_author | first -%}
+      {%- if author -%}
+        <a href="{{ author.url | relative_url }}">
+        {%- case page.lang -%}
+          {%- when 'zh-cn' -%}
+            {{ author.name-zh }}
+          {%- when 'en' -%}
+            {{ author.name-en }}
+          {%- else -%}
+            {{ author.name-en }}
+        {%- endcase -%}
+        </a>
+        {%- case page.lang -%}
+          {%- when 'zh-cn' -%}
+            {% unless forloop.last %}，{% endunless %}
+          {%- when 'en' -%}
+            {% unless forloop.last %}, {% endunless %}
+          {%- else -%}
+            {% unless forloop.last %}, {% endunless %}
+        {%- endcase -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </p>
+  <hr />
+  {%- include toc.html -%}
+  {{ content }}
+</article>
 <hr />
 {%- include license.html -%}

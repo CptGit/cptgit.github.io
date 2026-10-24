@@ -2,8 +2,18 @@
   <nav>
     <ul>
       {%- for item in site.data.menu -%}
+        {%- assign link_parts = item.link | split: '#' -%}
+        {%- assign link_path = link_parts | first -%}
         <li>
-          <a href="{{ item.link }}" {%- if page.url == item.link -%}class="current"{%- endif -%}>
+          {%- comment -%}
+            A link with a fragment (e.g. "/#publications") can never be
+            "current", otherwise it would compete with the page it lives
+            on. Note the space before `class`/`target`; without it the
+            generated HTML used to be `href="/"class="current"`.
+          {%- endcomment -%}
+          <a href="{{ item.link }}"
+             {%- if link_parts.size == 1 and page.url == link_path %} class="current" aria-current="page"{%- endif -%}
+             {%- if item.new_tab %} target="_blank" rel="noopener"{%- endif -%}>
             {{ item.name }}
           </a>
         </li>

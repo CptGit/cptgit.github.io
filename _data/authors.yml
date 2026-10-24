@@ -1,0 +1,10 @@
+## Author metadata keyed by the `short_name` used in the posts' front
+## matter (`author: zzq`). jekyll-seo-tag looks the key up in this file so
+## that <meta name="author"> and the JSON-LD block contain a real name
+## instead of the short name.
+
+zzq:
+  name: Zhiqiang Zang
+
+ai:
+  name: AI

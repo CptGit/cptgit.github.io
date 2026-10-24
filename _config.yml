@@ -1,5 +1,20 @@
 title: Zhiqiang Zang
 
+description: >-
+  Personal website of Zhiqiang Zang.
+
+# Canonical origin of the site. cptgit.github.io and www.zzqpro.net both
+# 301-redirect to this host (verified with `curl -I`), so this is the URL
+# that jekyll-seo-tag puts in <link rel="canonical">/og:url, that
+# jekyll-feed self-links to and that jekyll-sitemap/robots.txt advertise.
+url: "https://zzqpro.net"
+
+# Default language of the site; individual pages can override it
+# (`lang: zh-cn` in a post's front matter). Note: it is deliberately not
+# called `lang:` in the site config, because jekyll-seo-tag would then use
+# it verbatim as `og:locale` ("en" instead of the conventional "en_US").
+default_lang: en
+
 my_name: Zhiqiang Zang # Match and bold my name in publications
 
 plugins:

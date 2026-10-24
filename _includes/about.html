@@ -1,6 +1,6 @@
 <div id="about">
   <h2>About</h2>
-  <img src="{{ '/assets/img/avatar.jpg' | absolute_url }}" alt="My avatar" class="avatar">
+  <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Portrait of Zhiqiang Zang" class="avatar">
   <p>Welcome back, Commander!</p>
   <p>
     My name is <b>Zhiqiang Zang</b> (<b>臧志强</b>).
@@ -9,7 +9,7 @@
     <a href="https://www.utexas.edu/">The University of Texas at Austin</a> in 2024,
     working with Prof. <a href="https://users.ece.utexas.edu/~gligoric/">Milos
       Gligoric</a>. See my dissertation
-    <a href="/dl/papers/zang24dissertation.pdf" >here</a>.
+    <a href="{{ '/dl/papers/zang24dissertation.pdf' | relative_url }}">here</a>.
     My research interests are JIT (Just-In-Time) compiler testing and
     optimization. I am also familiar with other software engineering
     and programming language topics, including debugging,
@@ -19,6 +19,6 @@
   <p>
     I obtained my B.E. in Telecommunication Engineering at
     <a href="https://www.bupt.edu.cn">Beijing University of Posts and
-      Telecommunications</a> in 2018</a>.
+      Telecommunications</a> in 2018.
   </p>
 </div>

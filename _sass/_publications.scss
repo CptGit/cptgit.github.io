@@ -1,21 +1,56 @@
 /* Publications list. */
 #publications {
   font-size: $small;
+  line-height: 1.6;
+
+  ul {
+    margin: 0;
+    padding-left: 1.3em;
+  }
+
+  li {
+    padding: .55em 0;
+  }
+
   span {
     display: block;
   }
+
   em {
     font-style: normal;
     font-weight: bold;
   }
+
   .title {
     font-style: italic;
     font-size: $normalsize;
+    line-height: 1.4;
   }
+
+  .misc {
+    color: var(--muted);
+  }
+
   .award {
     font-weight: bold;
+    color: var(--accent);
   }
-  ul li {
-    padding: 5px 0px;
+
+  /* Only the entries that actually won something get a trophy. */
+  .award:not(:empty)::before {
+    content: "🏆 ";
+  }
+
+  .links {
+    margin-top: .15em;
+  }
+
+  .links a {
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

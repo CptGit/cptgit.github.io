@@ -1,0 +1,12 @@
+{%- if page.toc -%}
+{%- comment -%}
+  The list itself is generated from the headings of the post by
+  assets/js/toc.js. Without JavaScript the whole block stays hidden,
+  hence the `hidden` attribute.
+{%- endcomment -%}
+<details id="toc" class="toc" hidden>
+  <summary>{%- if page.lang == 'zh-cn' -%}目录{%- else -%}Contents{%- endif -%}</summary>
+  <ol id="toc-list"></ol>
+</details>
+<script src="{{ '/assets/js/toc.js' | relative_url }}" defer></script>
+{%- endif -%}

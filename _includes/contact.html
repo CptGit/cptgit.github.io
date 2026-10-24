@@ -1,9 +1,9 @@
-<div id ="contact">
+<div id="contact">
   <h2>Contact</h2>
   <ul>
     {%- for item in site.data.contact -%}
     <li>
-      {{ item.type }}:&nbsp{%- include utils/markdownify-with-removing-p-tag.html text=item.text -%}
+      <b>{{ item.type }}</b>:&nbsp;{%- include utils/markdownify-with-removing-p-tag.html text=item.text -%}
     </li>
     {%- endfor -%}
   </ul>
