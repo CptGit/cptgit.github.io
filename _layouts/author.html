@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1>{{ page.name-en }} ({{ page.name-zh }})</h1>
+<h1>{{ page.name-en }}{% if page.name-zh and page.name-zh != page.name-en %} ({{ page.name-zh }}){% endif %}</h1>
 
 {{ content }}
 

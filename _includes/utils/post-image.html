@@ -1,2 +1,18 @@
 {% capture image_path %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title }}/{{ include.name }}{% endcapture %}
-<img src="{{ image_path | prepend: '/assets/posts/' | relative_url }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %} class="post"/>
+{% capture image_path %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title }}/{{ include.name }}{% endcapture %}
+{%- comment -%}
+  `loading="lazy"` keeps big post pictures (a few MB each) out of the
+  initial page load; `decoding="async"` keeps them off the main thread.
+
+  `width`/`height`, when passed, must be the *intrinsic* pixel size of the
+  file (e.g. width="1376" height="768"): the browser then knows the aspect
+  ratio and can reserve the space before the picture arrives, so the text
+  below does not jump around (no CLS). They are not display sizes: the
+  displayed size stays governed by CSS
+  (`#content img.post { max-width: 100%; height: auto }`).
+{%- endcomment -%}
+<img src="{{ image_path | prepend: '/assets/posts/' | relative_url }}"
+     {% if include.alt %}alt="{{ include.alt }}" {% endif -%}
+     {% if include.width %}width="{{ include.width }}" {% endif -%}
+     {% if include.height %}height="{{ include.height }}" {% endif -%}
+     loading="lazy" decoding="async" class="post"/>

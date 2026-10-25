@@ -15,6 +15,12 @@ url: "https://zzqpro.net"
 # it verbatim as `og:locale` ("en" instead of the conventional "en_US").
 default_lang: en
 
+# jekyll-seo-tag asks for the wide `summary_large_image` card as soon as a
+# page has an image, which would crop the square avatar; ask for the square
+# `summary` card instead. Switch this back if you add a 1200x630 image.
+twitter:
+  card: summary
+
 my_name: Zhiqiang Zang # Match and bold my name in publications
 
 plugins:
@@ -37,10 +43,25 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+      # An author page only holds a one line bio plus the posts of that
+      # author, and every post already links to its author, so keep the
+      # pages out of the sitemap and out of the index. Their <title> stays
+      # the one Jekyll derives from the file name ("Zzq", "Ai").
+      sitemap: false
+      noindex: true
   - scope:
       path: ""
     values:
       layout: "default"
+      # Social preview image. jekyll-seo-tag only looks at `page["image"]`
+      # (there is no `site.image` fallback), hence setting it for every
+      # page here. The values are the intrinsic size of the file, which
+      # the tag turns into `og:image:width`/`og:image:height`.
+      image:
+        path: "/assets/img/avatar.jpg"
+        alt: "Zhiqiang Zang"
+        width: 1676
+        height: 1608
   - scope: # Exclude files from sitemap
       path: "dl/zhiqiang-zang-resume.pdf"
     values:
@@ -50,7 +71,7 @@ exclude:
   - scripts
   - vendor
   - .gitignore
-  - .gitattribute
+  - .gitattributes
   - Gemfile
   - Gemfile.lock
   - README.md
